@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+/*header*/
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #212529!important;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-desktop{
+    display: flex;
+    color: white;
+}
+
+.nav-desktop ul{
+    list-style: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.nav-desktop ul li:hover{
+    color: #FFB742;
+}
+
+.button-cnt{
+    background-color: #FFB742;
+    border-style: none;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+}
