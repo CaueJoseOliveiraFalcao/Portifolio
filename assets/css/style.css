@@ -148,7 +148,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
     flex-direction: row;
     padding: 3rem;
     margin: 0 20%;
@@ -186,4 +186,29 @@ header{
         margin-top: 3rem;
         padding: 1rem;
     }
+}
+/*quem sou eu*/
+
+.sobre-min{
+    margin-top: 10rem;
+    color: white;
+    padding: 0 6.5%;
+}
+.fix{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sobre-min h1 {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    width: 20rem;
+    border-radius: 20px;
+    background-color: #292B2E;
+}
+
+.sobre-min-div{
+    font-size: 1.1rem;
+    padding: 0 20%;
 }
