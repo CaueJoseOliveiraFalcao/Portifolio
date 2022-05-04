@@ -126,3 +126,18 @@ header{
 .img-logo-perfil{
     width: 200px;
 }
+@media (max-width:768px) {
+    .learn h3{
+        margin-top: 7rem;
+        font-size: 1rem;
+    }
+    .learn h1{
+        font-size: 2rem;
+    }
+    .learn p {
+        font-size: 0.8rem;
+    }
+    .learn img{
+        width: 150px;
+    }
+}
