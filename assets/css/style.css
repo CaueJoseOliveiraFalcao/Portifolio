@@ -36,3 +36,93 @@ header{
     padding: 0.5rem 1rem;
     border-radius: 15px;
 }
+.hamburguer{
+    display: none;
+}
+@media (max-width:768px) {
+    header{
+        position: fixed;
+        width: 100%;  
+    }
+    .nav-desktop{
+        display: none;
+    }
+    .button-cnt{
+        display: none;
+    }
+    .hamburguer{
+        display: block;
+        cursor: pointer;
+    }
+    .line-ham{
+        width: 30px;
+        height: 2px;
+        margin: 0.4rem 0rem;
+        background-color: white;
+    }
+}
+/*mobile nav*/
+.mobile-nav{
+    
+    background-color: #FFB742;
+    width: 200px;
+    height: 100%;
+    margin-top: -100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: .3s;
+}
+.mobile-nav .buttom-mobile{
+    border-style: none;
+    margin: 1rem 0rem;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+.mobile-nav ul{
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+    margin: 2rem 0rem;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.mobile-nav .button-cnt{
+    background-color: black;
+    color: #FFB742;
+    margin-top: 2rem;
+}
+
+/*Sobre min*/
+
+.learn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.learn h3 {
+    margin-top: 5rem;
+}
+.learn h3 span{
+    color: #FFB742;
+    text-decoration: underline;
+}
+.learn h1{
+    font-size: 6rem;
+    margin-bottom: 2rem;
+}
+.learn p{
+    font-size: 1.3rem;
+}
+.learn img{
+    border-radius: 100px;
+    margin-top: 1rem;
+}
+.img-logo-perfil{
+    width: 200px;
+}
