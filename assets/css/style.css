@@ -141,3 +141,49 @@ header{
         width: 150px;
     }
 }
+
+/*info*/
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    flex-direction: row;
+    padding: 3rem;
+    margin: 0 20%;
+    color: white;
+}
+
+.div-info{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    justify-content: space-between;
+    background-color: #292B2E;
+    transition: .3s;
+}
+.div-info:hover{
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.numeros-info h3{
+    color: #FFB742;
+    text-align: center;
+}
+.numeros-info p {
+    font-weight: bold;
+}
+@media (max-width:1024px) {
+    .info{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:425px) {
+    .info{
+        margin: 0;
+        margin-top: 3rem;
+        padding: 1rem;
+    }
+}
