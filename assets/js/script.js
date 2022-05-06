@@ -19,10 +19,12 @@ const cards = [
     {img : 'assets/img/vscode-icons_file-type-css.png'},
     {img : 'assets/img/logos_javascript.png'},
     {img : 'assets/img/logos_bootstrap.png'},
-    {img : 'assets/img/WordPress-logotype-wmark.png'}
+    {img : 'assets/img/WordPress-logotype-wmark.png'},
+    {img : 'assets/img/jquery-logo.png'}
 
 ]
 for (i = 0; i < cards.length; i++){
     const container = document.querySelector('.container-inject').innerHTML += 
     `<img class='img-card' src='${cards[i].img}'>`
 }
+

@@ -226,10 +226,10 @@ header{
     color: white;
 }
 .habilidades-info h1{
-    padding: 0 6.5%;
+    text-align: center;
 }
 .habilidades-info p{
-    padding: 0 9.5%;
+    padding: 0 19.5%;
 }
 .img-card{
     padding: 1rem;
@@ -239,9 +239,23 @@ header{
     max-width: 80px;
     background-color: #292B2E;
 }
-
+.container-inject{
+    background: url("../img/background-progamação.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem;
+    border-radius: 5px;
+}
 @media (max-width:428px) {
    .img-card{
        margin-top: 1rem;
    }
+}
+
+/*Projetos*/
+
+.padding-div{
+    padding: 0 10.5%;
 }
