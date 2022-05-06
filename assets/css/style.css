@@ -9,9 +9,16 @@ body{
     background-color: #212529!important;
     font-family: 'Roboto', sans-serif;
 }
-
+.remove-links{
+    text-decoration: none;
+    color: black;
+}
 header{
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #212529 ;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
@@ -126,6 +133,10 @@ header{
 }
 .img-logo-perfil{
     width: 200px;
+    transition: .6s;
+}
+.img-logo-perfil:hover{
+    border-radius: 0px;
 }
 @media (max-width:768px) {
     .learn h3{
@@ -167,7 +178,8 @@ header{
     transition: .3s;
 }
 .div-info:hover{
-    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+    
+    background-color: #34363b;
 }
 .numeros-info h3{
     color: #FFB742;
@@ -238,13 +250,13 @@ header{
     border-radius: 10px;
     max-width: 80px;
     background-color: #292B2E;
+    transition: .3s;
+    cursor: pointer;
+}
+.img-card:hover{
+    background-color: #35373b;
 }
 .container-inject{
-    background: url("../img/background-progamação.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 3rem;
     border-radius: 5px;
 }

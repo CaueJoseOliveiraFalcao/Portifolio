@@ -18,13 +18,16 @@
         <img src="./assets/img/Screenshot_1.png" class="img-logo" alt="logo">
         <nav class="nav-desktop">
             <ul>
-                <li>Home</li>
+                <li><a class="remove-links" style="color: #FFB742;" href="#learn" >Home</a></li>
             </ul>
             <ul>
-                <li>Sobre</li>
+                <li><a class="remove-links" style="color: #FFB742;" href="#sobre">Sobre</a></li>
             </ul>
             <ul>
-                <li>Skills</li>
+                <li><a class="remove-links" style="color: #FFB742;" href="#habilidades">Skills</a></li>
+            </ul>
+            <ul>
+                <li><a class="remove-links" style="color: #FFB742;" href="#projetos">Projetos</a></li>
             </ul>
         </nav>
         <section class="hamburguer" onclick="Abrir_Menu_Mobile()">
@@ -32,7 +35,7 @@
             <div class="line-ham"></div>
             <div class="line-ham"></div>
         </section>
-        <button class="button-cnt">Contato</button>
+        <button class="button-cnt"><a class="remove-links" href="https://api.whatsapp.com/send?phone=5592993659949&text=Ol%C3%A1">Contato</a></button>
     </header>
     <section class="mobile-nav">
         <button class="buttom-mobile" onclick="Fechar_Menu_Mobile()">X</button>
@@ -51,14 +54,13 @@
         <button class="button-cnt">Contato</button>
     </section>
     <main>
-
-        <section class="learn">
+        <section class="learn" id="learn">
             <h3>Oi eu sou <span class="destaque">Cauê Falcão</span>👋</h3>
             <h1>Estágio em Front-End</h1>
             <p>Crio sites com código limpo e responsável</p>
             <img class="img-logo-perfil" src="./assets/img/foto_perfil.jpg" alt="minha_foto">
         </section>
-        <section class="info">
+        <section class="info" id="sobre">
             <section class="div-info">
                 <section class="img-info">
                     <img src="./assets/img/years.png">
@@ -80,7 +82,7 @@
                 <section></section>
             </section>
         </section>
-        <section class="sobre-min" style="padding-top: 8rem;">
+        <section class="sobre-min" id="sobre-min" style="margin-bottom: 20rem;" >
             <section class="fix">
                 <h1 class="titulo-padrao">Quem Sou Eu?</h1>
             </section>
@@ -90,8 +92,8 @@
             </section>
 
         </section>
-        <section class="habilidades" style="padding-top:10rem;padding-bottom: 20rem;">
-            <section class="fix" style="margin-top: 10rem;">
+        <section class="habilidades" id="habilidades" style="margin-top: 10rem;margin-bottom: 20rem;">
+            <section class="fix">
                 <h1 class="titulo-padrao">Minhas Habilidades</h1>
             </section>
             <section class="row mt-5">
@@ -108,7 +110,7 @@
                 </section>
             </section>
         </section>
-        <section class="meus-projetos" style="padding-top: 5rem;">
+        <section class="meus-projetos" id="projetos" style="margin-top: 5rem;">
             <section class="fix">
                 <h1 class="titulo-padrao">Meus Projetos</h1>
             </section>
