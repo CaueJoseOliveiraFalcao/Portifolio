@@ -260,9 +260,44 @@ header{
     padding: 3rem;
     border-radius: 5px;
 }
+@media (max-width:768px) {
+    .container-inject{
+        justify-content: space-around;
+        gap: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+.col .card{
+    background: transparent;
+    border-color: #FFB742;
+    color: #FFB742;
+}
+.card-img-top{
+    max-height: 20rem;
+    object-fit: cover;
+    object-position: center;
+
+}
+.col .card .button-pr{
+    background: transparent;
+    border-color: #FFB742;
+    color: #FFB742;
+    border-style: solid;
+}
+.col .card .button-pr a{
+    text-decoration: none;
+    color: #FFB742;
+    transition: .3s;
+}
+
 @media (max-width:428px) {
    .img-card{
        margin-top: 1rem;
+   }
+   .col .card{
+       min-height: 1rem!important;
    }
 }
 
