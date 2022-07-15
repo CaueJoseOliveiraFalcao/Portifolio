@@ -1,0 +1,104 @@
+/*header*/
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: #212529!important;
+    font-family: 'Roboto', sans-serif;
+}
+.remove-links{
+    text-decoration: none;
+    color: #FFB742;
+}
+.fix-display{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #212529 ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-desktop{
+    display: flex;
+    color: white;
+}
+
+.nav-desktop ul{
+    list-style: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.nav-desktop ul li:hover{
+    color: #FFB742;
+}
+
+.button-cnt{
+    background-color: #FFB742;
+    border-style: none;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+}
+.hamburguer{
+    display: none;
+}
+@media (max-width:768px) {
+    .fix-display{
+        position: fixed;
+        width: 100%;  
+    }
+    .nav-desktop{
+        display: none;
+    }
+    .button-cnt{
+        display: none;
+    }
+    .hamburguer{
+        display: block;
+        cursor: pointer;
+    }
+    .line-ham{
+        width: 30px;
+        height: 2px;
+        margin: 0.4rem 0rem;
+        background-color: white;
+    }
+}
+
+/*mobile nav*/
+.mobile-nav{
+    
+    background-color: #FFB742;
+    width: 200px;
+    height: 100%;
+    margin-top: -110vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: .3s;
+}
+.mobile-nav .buttom-mobile{
+    border-style: none;
+    margin: 1rem 0rem;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+.mobile-nav ul{
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+    margin: 2rem 0rem;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.mobile-nav .button-cnt{
+    background-color: black;
+    color: #FFB742;
+    margin-top: 2rem;
+}
