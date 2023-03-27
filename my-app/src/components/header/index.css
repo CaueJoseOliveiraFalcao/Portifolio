@@ -12,6 +12,7 @@ body{
     text-decoration: none;
     color: #FFB742;
 }
+
 .fix-display{
     display: flex;
     position: fixed;
@@ -37,6 +38,13 @@ body{
 }
 
 .button-cnt{
+    background-color: #FFB742;
+    border-style: none;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+}
+.cnt-button{
+    color: #212529;
     background-color: #FFB742;
     border-style: none;
     padding: 0.5rem 1rem;
@@ -74,7 +82,6 @@ body{
     background-color: #FFB742;
     width: 200px;
     height: 100%;
-    margin-top: -110vh;
     position: fixed;
     top: 0;
     right: 0;
