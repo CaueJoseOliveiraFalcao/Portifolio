@@ -18,8 +18,8 @@ export default function Hello() {
                     
                 </section>
                 <section class="numeros-info">
-                    <h3>1/5</h3>
-                    <p>Anos de Estudo na Área</p>
+                    <h3>1</h3>
+                    <p>Ano de Estudo na Área</p>
                 </section>
                 <section></section>
             </section>
