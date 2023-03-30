@@ -1,0 +1,32 @@
+.sobre-min{
+    margin-top: 10rem;
+    color: white;
+    padding: 0 6.5%;
+}
+.fix{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.titulo-padrao {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    width: 20rem;
+    color: white;
+    border-radius: 20px;
+    background-color: #292B2E;
+}
+.bnt-sobre{
+    margin: auto;
+    width: 100%;
+}
+.sobre-min-div{
+    font-size: 1.1rem;
+    padding: 0 20%;
+}
+@media (max-width:428px) {
+    .sobre-min-div{
+        padding: 0;
+    }
+}
