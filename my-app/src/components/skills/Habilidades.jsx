@@ -25,7 +25,7 @@ export default function Habilidades() {
             <section class="fix">
                 <h1 class="titulo-padrao">Minhas Habilidades</h1>
             </section>
-            <section class="row mt-5">
+            <section class="row mt-5 hamood">
                 <section class="col-md-6 habilidades-info">
                     <h1>Quais são as minhas habilidades?</h1>
                     <p>Eu aprendi minhas habilidades em sua maioria com muita prática
