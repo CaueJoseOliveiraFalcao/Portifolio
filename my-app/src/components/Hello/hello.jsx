@@ -1,6 +1,6 @@
 import React from 'react';
 import './hello.css'
-import FotodePerfil from '../../imagem/foto_perfil.jpg'
+import FotodePerfil from '../imagem/foto_perfil.jpg'
 
 export default function Hello() {
     
