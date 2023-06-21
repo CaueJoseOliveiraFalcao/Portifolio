@@ -1,9 +1,25 @@
 import React from 'react';
 import './hello.css'
 import FotodePerfil from '../imagem/foto_perfil.jpg'
+import { Octokit } from 'octokit'
+import axios from 'axios'
 
 export default function Hello() {
-    
+    const ocktokit = new Octokit()
+    const token = 'C@u3j0s3'
+    const username = 'CaueJoseOliveiraFalcao'
+
+    async function getReposityCont(){
+        try {
+            const { data : user} = await ocktokit.users.getByUsername({
+                username : username
+            })
+        }
+
+        const repositoryCont = user.public_repos
+        console.log(`O usuário ${username} possui ${repositoryCount} repositórios.`);
+    }
+
     return (
       <main>
         <section class="learn" id="learn">
