@@ -6,15 +6,13 @@ import { TailSpin } from 'react-loader-spinner'
 
 export default function Hello() {
    
-
+    const spinner = false
    
    const getCount = async () =>{
     const octokit = new Octokit({
         auth :'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'
        })
     try {
-        const perPage = 100;
-        let page = 1;
         const response = await octokit.request("GET /user/repos", {
             per_page : 99,
             headers: {
@@ -35,6 +33,7 @@ export default function Hello() {
             <p>Crio sites com código limpo e responsável</p>
             <img class="img-logo-perfil" src={FotodePerfil} alt="minha_foto"/>
         </section>
+        {spinner === true ? }
         <TailSpin
         type="TailSpin" // Estilo da animação (consulte a documentação para mais opções)
         color="#00BFFF" // Cor do loader
