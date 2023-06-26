@@ -3,15 +3,17 @@ import './hello.css'
 import FotodePerfil from '../imagem/foto_perfil.jpg'
 import { Octokit } from 'octokit'
 import { TailSpin } from 'react-loader-spinner'
+import { useEffect , useState } from 'react';
 
 export default function Hello() {
    
-    const spinner = false
+    let [load,setload] = useState(false)
    
    const getCount = async () =>{
     const octokit = new Octokit({
-        auth :'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'
+        auth :'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'
        })
+    setload(true)
     try {
         const response = await octokit.request("GET /user/repos", {
             per_page : 99,
@@ -24,6 +26,7 @@ export default function Hello() {
     } catch (error) {
         console.log(error);
     }
+    setload(false)
    }
     return (
       <main>
@@ -33,13 +36,12 @@ export default function Hello() {
             <p>Crio sites com código limpo e responsável</p>
             <img class="img-logo-perfil" src={FotodePerfil} alt="minha_foto"/>
         </section>
-        {spinner === true ? }
-        <TailSpin
-        type="TailSpin" // Estilo da animação (consulte a documentação para mais opções)
-        color="#00BFFF" // Cor do loader
-        height={80} // Altura do loader
-        width={80} // Largura do loader
-      />
+        {load === true ? <TailSpin
+        type="TailSpin"
+        color="#00BFFF"
+        height={80}
+        width={80}/> : '' }
+        
         <section class="info" id="sobre">
             <section class="div-info">
                 <section class="img-info">
