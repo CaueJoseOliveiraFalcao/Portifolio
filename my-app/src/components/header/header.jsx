@@ -4,13 +4,13 @@ import logo from './Screenshot_1.png';
 import './script.js';
 
 export default function Header() {
-  const [menuState, setMenuState] = useState('-110vh');
+  const [menuState, setMenuState] = useState('-1000px');
 
   const HandleMobileMenuDown = () => {
     setMenuState('0');
   };
   const HandleMobileMenuUp = () => {
-    setMenuState('-110vh');
+    setMenuState('-1000px');
   };
   const marginTop = `${menuState}`;
 

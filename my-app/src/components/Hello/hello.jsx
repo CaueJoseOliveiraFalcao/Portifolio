@@ -8,10 +8,11 @@ import { useEffect , useState } from 'react';
 export default function Hello() {
    
     let [load,setload] = useState(false)
+    const [repositoryNumber , setRepository] = useState(0)
    
    const getCount = async () =>{
     const octokit = new Octokit({
-        auth :'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'
+        auth :'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'
        })
     setload(true)
     try {
@@ -22,12 +23,16 @@ export default function Hello() {
             },
             
         });
-        console.log(response.data);
+        setRepository(response.data.length)
+        console.log('success')
     } catch (error) {
         console.log(error);
     }
     setload(false)
    }
+   useEffect(() => {
+    getCount()
+   }, [])
     return (
       <main>
         <section class="learn" id="learn">
@@ -36,11 +41,7 @@ export default function Hello() {
             <p>Crio sites com código limpo e responsável</p>
             <img class="img-logo-perfil" src={FotodePerfil} alt="minha_foto"/>
         </section>
-        {load === true ? <TailSpin
-        type="TailSpin"
-        color="#00BFFF"
-        height={80}
-        width={80}/> : '' }
+        
         
         <section class="info" id="sobre">
             <section class="div-info">
@@ -49,7 +50,6 @@ export default function Hello() {
                 </section>
                 <section class="numeros-info">
                     <h3>1</h3>
-                    <button onClick={getCount}></button>
                     <p>Ano de Estudo na Área</p>
                 </section>
                 <section></section>
@@ -58,9 +58,18 @@ export default function Hello() {
                 <section class="img-info">
                     
                 </section>
-                <section class="numeros-info">
-                    <h3>49</h3>
-                    <p>Repositorios de Estudo e Pratica</p>
+                <section class="numeros-info ponteir">
+                <a href="https://github.com/CaueJoseOliveiraFalcao" target='_blank' className='GithubLinkContainer'>
+                    {load === true ? <TailSpin
+                        type="TailSpin"
+                        color="yellow"
+                        height={80}
+                        width={80}/> : <h3>{repositoryNumber}</h3> }
+                        <div className='container_egg'>
+                            <p className='egg'>Atualizado Dinamicamente pela api do Github!</p>
+                        </div>
+                        <p>Repositorios de Projetos e Estudos</p>
+                </a>
                 </section>
                 <section></section>
             </section>
