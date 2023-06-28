@@ -9,11 +9,10 @@ export default function Hello() {
    
     let [load,setload] = useState(false)
     const [repositoryNumber , setRepository] = useState(0)
-   
-   const getCount = async () =>{
     const octokit = new Octokit({
-        auth :'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'
+        auth :'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'
        })
+   const getCount = async () =>{
     setload(true)
     try {
         const response = await octokit.request("GET /user/repos", {
