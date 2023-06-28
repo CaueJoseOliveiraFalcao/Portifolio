@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './Habili.css'
-import html from '../imagem/vscode-icons_file-type-html.png'
-import css from '../imagem/vscode-icons_file-type-css.png'
-import js from '../imagem/logos_javascript.png'
-import boot from '../imagem/logos_bootstrap.png'
-import Word from '../imagem/WordPress-logotype-wmark.png'
-import jquery from '../imagem/jquery-logo.png'
+import html from '../../imagem/vscode-icons_file-type-html.png'
+import css from '../../imagem/vscode-icons_file-type-css.png'
+import js from '../../imagem/logos_javascript.png'
+import boot from '../../imagem/logos_bootstrap.png'
+import Word from '../../imagem/WordPress-logotype-wmark.png'
+import jquery from '../../imagem/jquery-logo.png'
 
 
 export default function Habilidades() {

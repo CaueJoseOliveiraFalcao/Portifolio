@@ -1,6 +1,6 @@
 import React from 'react';
 import './hello.css'
-import FotodePerfil from '../imagem/foto_perfil.jpg'
+import FotodePerfil from '../../imagem/foto_perfil.jpg'
 import { Octokit } from 'octokit'
 import { TailSpin } from 'react-loader-spinner'
 import { useEffect , useState } from 'react';
@@ -12,7 +12,7 @@ export default function Hello() {
    
    const getCount = async () =>{
     const octokit = new Octokit({
-        auth :'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'
+        auth :'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'
        })
     setload(true)
     try {
