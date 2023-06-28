@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
-import './index.css';
 import logo from './Screenshot_1.png';
+
 import './script.js';
+import './index.css';
 
 export default function Header() {
-  const [menuState, setMenuState] = useState('-1000px');
 
-  const HandleMobileMenuDown = () => {
-    setMenuState('0');
-  };
-  const HandleMobileMenuUp = () => {
-    setMenuState('-1000px');
-  };
-  const marginTop = `${menuState}`;
+  const [menuState, setMenuState] = useState('-1000px');
+  //Switch do Menu Mobile
+  const HandleMobileMenu = (UpOrDown) => {
+    if (UpOrDown === 'Up'){
+      setMenuState('-1000px');
+    }
+    else{
+      setMenuState('0')
+    }
+  }
 
   return (
     <section>
@@ -32,15 +35,15 @@ export default function Header() {
             <li><a class="remove-links" href="#projetos">Projetos</a></li>
           </ul>
         </nav>
-        <section class="hamburguer" onClick={HandleMobileMenuDown} >
+        <section class="hamburguer" onClick={() => HandleMobileMenu('Down')} >
           <div class="line-ham"></div>
           <div class="line-ham"></div>
           <div class="line-ham"></div>
         </section>
         <button class="button-cnt"><a class="cnt-button" href="https://api.whatsapp.com/send?phone=5592993659949&text=Ol%C3%A1">Contato</a></button>
       </section>
-      <section class="mobile-nav" style={{marginTop: `${marginTop}`}}>
-        <button class="buttom-mobile" onClick={HandleMobileMenuUp} >X</button>
+      <section class="mobile-nav" style={{marginTop: menuState}}>
+        <button class="buttom-mobile" onClick={() => HandleMobileMenu('Up')} >X</button>
         <ul>
           <li>Home</li>
         </ul>

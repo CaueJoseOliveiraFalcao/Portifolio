@@ -12,7 +12,7 @@ export default function Hello() {
    
    const getCount = async () =>{
     const octokit = new Octokit({
-        auth :'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'
+        auth :'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'
        })
     setload(true)
     try {
@@ -24,7 +24,7 @@ export default function Hello() {
             
         });
         setRepository(response.data.length)
-        console.log('success')
+        console.log(response.data)
     } catch (error) {
         console.log(error);
     }
