@@ -12,7 +12,7 @@ export default function Hello() {
    
    const getCount = async () =>{
     const octokit = new Octokit({
-        auth :'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'
+        auth :'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'
        })
     setload(true)
     try {
