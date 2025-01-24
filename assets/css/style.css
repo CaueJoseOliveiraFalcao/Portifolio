@@ -205,12 +205,14 @@ header{
 .sobre-min{
     margin-top: 10rem;
     color: white;
-    padding: 0 6.5%;
 }
 .fix{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+.col-md-6{
+    width: 100%!important;
 }
 .titulo-padrao {
     text-align: center;
@@ -221,14 +223,31 @@ header{
     border-radius: 20px;
     background-color: #292B2E;
 }
+.flex-d{
+    display: flex;
 
+}
 .sobre-min-div{
     font-size: 1.1rem;
-    padding: 0 20%;
+    padding: 10%;
 }
-@media (max-width:428px) {
+@media (max-width:728px) {
     .sobre-min-div{
         padding: 0;
+    }
+    .flex-d{
+        flex-direction: column;
+    }
+    .habilidades{
+        margin-top: 0!important;
+        margin-bottom: 0!important;
+        width: 100%!important;
+    }
+    .sobre-min{
+        width: 100%!important;
+    }
+    .me-text{
+        padding: 0 2rem;
     }
 }
 
@@ -241,7 +260,9 @@ header{
     text-align: center;
 }
 .habilidades-info p{
-    padding: 0 19.5%;
+    width: 100%;
+    padding: 0 10%!important;
+    padding: 0;
 }
 .img-card{
     padding: 1rem;
